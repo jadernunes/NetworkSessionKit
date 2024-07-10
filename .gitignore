@@ -16,6 +16,7 @@
 .idea/**/contentModel.xml
 *.generated.swift
 *./UserInterfaceState.xcuserstate
+*.resolved
 
 # Sensitive or high-churn files
 .idea/**/dataSources/

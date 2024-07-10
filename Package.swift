@@ -14,9 +14,14 @@ let package = Package(
             name: "NetworkSessionKit",
             targets: ["NetworkSessionKit"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.8.1"),
+        .package(url: "https://github.com/jadernunes/LocalizeKit.git", from: "1.0.1"),
+    ],
     targets: [
         .target(
-            name: "NetworkSessionKit"),
+            name: "NetworkSessionKit",
+            dependencies: ["LocalizeKit", "Alamofire"]),
         .testTarget(
             name: "NetworkSessionKitTests",
             dependencies: ["NetworkSessionKit"]),
