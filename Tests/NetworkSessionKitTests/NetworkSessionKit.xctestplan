@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "2DCDA34C-96EE-4727-A435-6E8446424145",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "NetworkSessionKit",
+          "name" : "NetworkSessionKit"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "NetworkSessionKitTests",
+        "name" : "NetworkSessionKitTests"
+      }
+    }
+  ],
+  "version" : 1
+}
