@@ -10,10 +10,10 @@ import LocalizeKit
 extension LocalizableString {
     
     func localized() -> String {
-        localized(bundle: .module)
+        localized(bundle: .currentModule)
     }
     
     func localized(_ values: CVarArg...) -> String {
-        localized(values, bundle: .module)
+        localized(values, bundle: .currentModule)
     }
 }
