@@ -20,7 +20,7 @@ public extension Requestable {
     // MARK: - Properties
 
     var parameters: Params? { nil }
-    var headers: Headers { [] }
+    var headers: Headers { Headers() }
 
     // MARK: - Methods
 
