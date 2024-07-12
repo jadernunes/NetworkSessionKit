@@ -6,6 +6,7 @@
 
 import Foundation
 import Alamofire
+import SwiftUtilsKit
 
 public enum HTTPMethodType: String, CaseIterable {
     case get = "GET"
@@ -33,7 +34,7 @@ extension NetworkSession: INetwork {
                 .validate()
                 .responseDecodable(
                     queue: DispatchQueue.global(qos: .userInitiated),
-                    decoder: JSONDecoder.decoder) { (response: DataResponse<T, AFError>) in
+                    decoder: JSONDecoder.defaultDecoder()) { (response: DataResponse<T, AFError>) in
                         DispatchQueue.main.async {
                             switch response.result {
                             case .success(let value):
