@@ -17,11 +17,12 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.8.1"),
         .package(url: "https://github.com/jadernunes/LocalizeKit.git", from: "1.0.1"),
+        .package(url: "https://github.com/jadernunes/SwiftUtilsKit.git", from: "1.2.4")
     ],
     targets: [
         .target(
             name: "NetworkSessionKit",
-            dependencies: ["LocalizeKit", "Alamofire"]),
+            dependencies: ["LocalizeKit", "Alamofire", "SwiftUtilsKit"]),
         .testTarget(
             name: "NetworkSessionKitTests",
             dependencies: ["NetworkSessionKit"]),
