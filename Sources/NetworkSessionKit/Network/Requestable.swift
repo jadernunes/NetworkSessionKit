@@ -7,6 +7,7 @@
 import Foundation
 
 public protocol Requestable: URLConvertible {
+    var baseURL: String { get }
     var method: HTTPMethodType { get }
     var parameters: Params? { get }
     var path: String { get }
@@ -25,7 +26,7 @@ public extension Requestable {
     // MARK: - Methods
 
     func asURLRequest() throws -> URLRequest {
-        guard let url = URL(string: "TEST") else {
+        guard let url = URL(string: baseURL) else {
             throw NetworkErrorType.missingURL
         }
 
