@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name              = "NetworkSessionKit"
-s.version           = "1.0.4"
+s.version           = "1.0.5"
 s.summary           = "NetworkSessionKit is a network lib to work with HTTP requests"
 s.homepage          = "https://github.com/jadernunes/NetworkSessionKit.git"
 s.author            = "Jáder Nunes - https://jadernunes.com"

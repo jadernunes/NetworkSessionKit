@@ -13,6 +13,7 @@ public enum HTTPMethodType: String, CaseIterable {
     case post = "POST"
     case patch = "PATCH"
     case delete = "DELETE"
+    case put = "PUT"
 }
 
 public protocol INetwork {

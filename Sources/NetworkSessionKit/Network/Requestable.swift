@@ -49,7 +49,7 @@ private extension URLRequest {
                 switch method {
                 case .get:
                     self = try URLEncoder.default.encode(request, with: parameters)
-                case .post, .patch, .delete:
+                    case .post, .patch, .delete, .put:
                     httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
                 }
             } catch {
